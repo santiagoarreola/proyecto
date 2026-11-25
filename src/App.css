@@ -1,0 +1,74 @@
+.header { height: 88px; padding: 0 max(5%, calc((100% - 1280px)/2)); background: white; border-bottom: 1px solid #e5eaed; display: flex; align-items: center; justify-content: space-between; gap: 25px; }
+.marca { display: flex; align-items: center; gap: 12px; font-size: 21px; font-weight: 750; letter-spacing: -.7px; white-space: nowrap; }
+.logo { display: grid; place-items: center; position: relative; width: 42px; height: 44px; background: #163b42; border-radius: 12px; color: white; font-size: 29px; }
+.logo span { position: absolute; color: #70d6a7; right: 6px; top: 0; font-size: 25px; }
+.marca small { display: block; font-size: 9px; letter-spacing: 3px; margin-top: 4px; color: #73838c; }
+nav { display: flex; align-self: stretch; gap: 34px; font-size: 14px; color: #77848d; }
+nav a { display: flex; align-items: center; border-bottom: 3px solid transparent; padding-top: 3px; }
+nav a:hover, nav .activo { color: #167b60; border-color: #218967; }
+.ubicacion { font-size: 12px; background: #f5f7f8; border: 1px solid #e7ecee; border-radius: 22px; padding: 11px 15px; }
+main { max-width: 1280px; margin: auto; padding: 35px 0 0; width: 90%; }
+.encabezado { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 27px; }
+.subtitulo { color: #248267; letter-spacing: 2px; font-size: 10px; font-weight: 750; margin: 0 0 10px; }
+h1 { font-size: clamp(26px, 2.6vw, 37px); letter-spacing: -1.3px; margin: 0 0 10px; font-weight: 720; }
+.encabezado p:last-child { margin: 0; font-size: 13px; color: #7a8790; }
+.demo { display: flex; align-items: center; gap: 8px; font-size: 11px; white-space: nowrap; color: #667b76; border: 1px solid #dce6e1; border-radius: 20px; padding: 9px 13px; }
+.demo i { width: 6px; height: 6px; background: #299676; border-radius: 50%; }
+.columnas { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(310px, 1fr); gap: 23px; align-items: start; }
+.clima { background: linear-gradient(115deg, #173b4a, #225561); border-radius: 20px; color: white; padding: 26px 30px 0; overflow: hidden; position: relative; }
+.clima-superior { display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #d6e6e8; }
+.estado { font-size: 10px; padding: 7px 11px; border-radius: 20px; background: #ffffff14; border: 1px solid #ffffff20; }
+.clima-central { display: flex; justify-content: space-between; align-items: center; padding: 25px 0 26px; }
+.hoy { font-size: 9px; letter-spacing: 2px; color: #a5c6ca; margin: 0 0 6px; }
+.temperatura { font-size: 85px; font-weight: 500; letter-spacing: -6px; line-height: 1.1; }
+.temperatura > span { font-size: 36px; letter-spacing: -1px; font-weight: 300; vertical-align: top; display: inline-block; margin: 12px 0 0 8px; color: #abcbd0; }
+.clima h2 { font-size: 20px; font-weight: 500; margin: 10px 0; }
+.clima-central p:last-child { font-size: 11px; color: #b3cdd1; margin: 0; }
+.ilustracion { position: relative; width: 220px; height: 180px; flex-shrink: 0; }
+.sol { position: absolute; width: 94px; height: 94px; background: #f9d48b; border-radius: 50%; right: 27px; top: 5px; box-shadow: 0 0 0 17px #f7d99008, 0 0 0 35px #f7d99005; }
+.nube { position: absolute; width: 145px; height: 55px; background: linear-gradient(#f0f7f9, #c5dde5); border-radius: 50px; top: 80px; left: 27px; filter: drop-shadow(0 10px 10px #102d4733); }
+.nube::before, .nube::after { content: ''; position: absolute; background: #edf5f7; border-radius: 50%; }
+.nube::before { width: 74px; height: 74px; left: 26px; top: -40px; }
+.nube::after { width: 56px; height: 56px; right: 10px; top: -23px; }
+.gotas { display: flex; gap: 26px; position: absolute; top: 150px; left: 63px; transform: skew(-20deg); }
+.gotas span { display: block; width: 5px; height: 17px; background: #8bd6e6; border-radius: 10px; }
+.datos-clima { border-top: 1px solid #ffffff20; display: grid; grid-template-columns: repeat(3, 1fr); padding: 20px 0; }
+.datos-clima > div { border-right: 1px solid #ffffff20; padding-left: 25px; }
+.datos-clima > div:first-child { padding-left: 0; }
+.datos-clima > div:last-child { border: 0; }
+.datos-clima span { display: block; color: #b4ccd1; font-size: 11px; margin-bottom: 7px; }
+.datos-clima strong { font-size: 23px; font-weight: 500; }
+.datos-clima small { font-size: 12px; font-weight: 400; }
+.aviso { display: flex; gap: 14px; align-items: center; border: 1px solid #e9dfc7; background: #fff9ec; border-radius: 12px; margin: 16px 0 22px; padding: 15px 19px; color: #876634; }
+.aviso-icono { font-size: 27px; }
+.aviso strong { font-size: 12px; }.aviso p { font-size: 11px; margin: 5px 0 0; line-height: 1.6; color: #9d8660; }
+.panel { border: 1px solid #e3e8eb; border-radius: 17px; background: white; padding: 24px; }
+.titulo-panel { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+h2 { margin: 0; font-size: 18px; letter-spacing: -.4px; }
+.titulo-panel > span { font-size: 10px; color: #8a969c; }
+.horas { display: grid; grid-template-columns: repeat(6, 1fr); margin-top: 23px; gap: 6px; }
+.hora { display: flex; align-items: center; flex-direction: column; gap: 11px; padding: 14px 0; border-radius: 12px; }
+.hora:first-child { background: #edf6f3; }.hora > span { font-size: 11px; color: #88949a; }.hora:first-child > span { color: #248267; font-weight: 600; }.hora b { font-size: 27px; font-weight: normal; }.hora strong { font-size: 18px; }.hora small { font-size: 10px; color: #598cad; }
+.reportes .subtitulo { font-size: 9px; margin-bottom: 8px; }.titulo-panel .contador { border-radius: 20px; background: #f2f5f6; padding: 7px 10px; font-size: 10px; color: #748189; }
+.intro-reportes { color: #8a959d; font-size: 12px; margin: 13px 0 24px; }
+.reporte { display: flex; gap: 14px; padding: 21px 0; border-top: 1px solid #edf0f2; }.icono-reporte { display: grid; place-items: center; width: 39px; height: 39px; flex-shrink: 0; border-radius: 11px; font-size: 23px; }.azul { color: #4c8ab0; background: #edf5fb; }.naranja { color: #c58749; background: #fff3e6; }.verde { color: #448b6c; background: #eaf5ef; }
+.etiqueta { display: inline-block; font-size: 9px; padding: 4px 7px; border-radius: 5px; font-weight: 600; }.reporte h3 { margin: 9px 0 7px; font-size: 14px; }.reporte p { font-size: 11px; color: #86929b; line-height: 1.8; margin: 0 0 11px; }.reporte small { font-size: 9px; color: #93a09d; }.reporte small span { color: #9ca6ae; }
+.lista-reportes { max-height: 460px; overflow: auto; }.nota-reportes { display: flex; gap: 10px; padding: 13px; border-radius: 9px; background: #f7f9fa; margin: 8px 0 18px; color: #91a0a7; }.nota-reportes p { font-size: 10px; line-height: 1.7; margin: 0; }
+.boton-reporte { width: 100%; background: #218568; color: white; border: 0; border-radius: 9px; padding: 13px; font-size: 12px; font-weight: 600; }.boton-reporte:hover { background: #176b53; }
+.comunidad { display: flex; gap: 16px; align-items: center; margin-top: 21px; padding: 20px 0; }.comunidad > span { font-size: 30px; color: #329077; }.comunidad h2 { font-size: 13px; }.comunidad p { font-size: 10px; color: #89959c; line-height: 1.7; margin: 7px 0 0; }.comunidad button { margin-left: auto; white-space: nowrap; border: 1px solid #d9e4df; border-radius: 8px; color: #347b66; background: transparent; padding: 10px; font-size: 10px; }
+footer { display: flex; justify-content: space-between; gap: 20px; padding: 21px 0; border-top: 1px solid #e0e7ea; font-size: 10px; color: #96a1a7; margin-top: 10px; }.pie-marca { color: #4d646b; font-weight: 600; }.pie-marca span { color: #95a1a7; font-weight: 400; }
+.modal { position: fixed; inset: 0; background: #102f42a8; display: flex; align-items: center; justify-content: center; z-index: 10; padding: 20px; }.contenido-modal { background: white; border-radius: 20px; padding: 28px; width: 440px; max-width: 100%; max-height: 90vh; overflow: auto; }.contenido-modal > p { color: #7b8b91; font-size: 13px; }.cerrar { border: 0; background: #f0f4f5; border-radius: 50%; width: 30px; height: 30px; font-size: 22px; }.contenido-modal form { display: flex; flex-direction: column; gap: 9px; margin-top: 23px; }.contenido-modal label { font-size: 12px; margin-top: 5px; }.contenido-modal input, .contenido-modal select, .contenido-modal textarea { width: 100%; border: 1px solid #d9e2e5; border-radius: 7px; padding: 10px; background: #fbfcfc; color: #193541; }.contenido-modal textarea { resize: vertical; }.ayuda { font-size: 10px; color: #84959c; line-height: 1.6; }.error { color: #b44932; font-size: 12px; }
+@media (min-width: 1500px) { main { padding-top: 45px; }.clima-central { padding-top: 35px; padding-bottom: 35px; } }
+@media (max-width: 1000px) { .ubicacion { display: none; }.columnas { grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr); gap: 16px; }.clima { padding: 22px 22px 0; }.ilustracion { width: 165px; transform: scale(.85); transform-origin: right center; }.encabezado { align-items: start; flex-direction: column; }.comunidad { flex-wrap: wrap; }.clima-central p:last-child { max-width: 180px; line-height: 1.7; } }
+@media (max-width: 760px) { .header { height: auto; min-height: 85px; flex-wrap: wrap; padding: 18px 5% 0; gap: 14px; }.marca { font-size: 19px; }nav { gap: 23px; height: 42px; font-size: 12px; }main { padding-top: 27px; }.columnas { grid-template-columns: 1fr; }.clima-central p:last-child { max-width: none; }.clima-central { gap: 0; }.temperatura { font-size: 75px; }.estado { font-size: 9px; }.panel { padding: 21px; }.comunidad { padding: 10px 0 20px; }.comunidad button { margin-left: 0; }footer { flex-direction: column; gap: 8px; }.reportes { margin-bottom: 15px; } }
+@media (max-width: 390px) { .ilustracion { width: 110px; transform: scale(.65); }.clima-superior { flex-wrap: wrap; gap: 10px; }.hora b { font-size: 22px; }.datos-clima > div { padding-left: 12px; } }
+
+.acciones-ubicacion { display: flex; align-items: center; gap: 10px; }
+.boton-mapa { border: 1px solid #218568; background: #218568; color: white; border-radius: 22px; padding: 11px 16px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.boton-mapa:hover { background: #176b53; }
+.panel-mapa { margin-bottom: 25px; }
+.descripcion-mapa { color: #7b8b91; font-size: 12px; line-height: 1.7; margin: 15px 0 20px; }
+.mapa-interactivo { display: block; width: 100%; height: 460px; border: 1px solid #dce6e1; border-radius: 12px; background: #edf3f0; }
+.pie-mapa { display: flex; justify-content: space-between; gap: 14px; margin-top: 15px; font-size: 11px; line-height: 1.7; color: #84959c; }
+.pie-mapa a { color: #218568; font-weight: 600; }
+@media (max-width: 760px) { .acciones-ubicacion { margin-left: auto; } .header nav { order: 3; width: 100%; justify-content: center; } .mapa-interactivo { height: 350px; } .pie-mapa { flex-direction: column; } }
